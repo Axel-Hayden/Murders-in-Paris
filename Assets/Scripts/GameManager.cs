@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += LoadState;
     }
 
+    //Clues Collected
+    public List<int> clueNum;
+
+
     //Resources
     public List<Sprite> playerSprite;
 
