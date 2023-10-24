@@ -4,16 +4,13 @@ using UnityEngine;
 
 
 public class Player : Mover
-
-
-
 {
+
     protected override void Start()
     {
         base.Start();
 
     }
-
 
     private void FixedUpdate()
     {

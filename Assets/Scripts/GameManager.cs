@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += LoadState;
     }
 
+    //Animation Control Lock
+    public bool isAnimation;
+
     //Clues Collected
     public List<int> clueNum;
 
