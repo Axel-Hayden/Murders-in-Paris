@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     //Resources
     public List<Sprite> playerSprite;
 
+    public List<Sprite> suspectSprite;
 
     //References
     public Player player;

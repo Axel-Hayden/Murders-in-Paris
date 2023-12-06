@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading.Tasks;
 
 public class NPC : Collectable
 {
@@ -10,5 +11,5 @@ public class NPC : Collectable
         Debug.Log("Clue found");
 
     }
-
 }
+

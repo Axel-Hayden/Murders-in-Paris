@@ -114,7 +114,7 @@ MonoBehaviour:
     maxNormalAngle: 0
   Clues: {fileID: 1301458575, guid: e1554c83a46004948b653acb18920a80, type: 3}
   Atlas_1: {fileID: -1486937803, guid: e1554c83a46004948b653acb18920a80, type: 3}
-  whichClue: 1
+  whichClue: 0
   GameManager: {fileID: 0}
 --- !u!61 &2996012246133399720
 BoxCollider2D:
