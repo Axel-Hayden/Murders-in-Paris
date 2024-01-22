@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 0d37b30af99280140b008209cba468ba
-=======
-guid: e0f2ce9ffb4a9a8429156e5e09c9761a
->>>>>>> Stashed changes
+guid: 75130124768027240939bc9602b63731
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -109,20 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sexyportraits_0
+      name: womens_0
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 60
-        y: 20
-        width: 230
-        height: 250
-=======
-        x: 0
-        y: 0
-        width: 290
-        height: 360
->>>>>>> Stashed changes
+        x: 95
+        y: 70
+        width: 200
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,32 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: 81b5a29a61eb03c4399ef9925d7f9f73
-      internalID: 1819735636
-=======
-      spriteID: 1885ea21eb03b7f41905b0b349dd1c5c
-      internalID: 1755170778
->>>>>>> Stashed changes
+      spriteID: 9eb346e68399adf488926e4f044de149
+      internalID: 2064785229
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sexyportraits_1
+      name: womens_1
       rect:
         serializedVersion: 2
-<<<<<<< Updated upstream
-        x: 320
-        y: 20
-        width: 230
-        height: 250
-=======
-        x: 290
-        y: 0
-        width: 290
-        height: 360
->>>>>>> Stashed changes
+        x: 295
+        y: 70
+        width: 200
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,31 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: 772e5d5c70fae374995d35002b526339
-      internalID: -1421800205
-=======
-      spriteID: d0ce4ed39bc533042bfa67d43ea03a95
-      internalID: 1094871193
->>>>>>> Stashed changes
+      spriteID: 2eb8cec0f68b88541afd1f5ede4e8e7e
+      internalID: -2073738083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sexyportraits_2
+      name: womens_2
       rect:
         serializedVersion: 2
-        x: 580
-<<<<<<< Updated upstream
-        y: 20
-        width: 230
-        height: 250
-=======
-        y: 0
-        width: 290
-        height: 360
->>>>>>> Stashed changes
+        x: 495
+        y: 70
+        width: 200
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -195,13 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<< Updated upstream
-      spriteID: b6e8d6483792fb8479b3247106580cd2
-      internalID: 1231567839
-=======
-      spriteID: b6fda19889938b2468c9c12f4a0665cc
-      internalID: 1455536525
->>>>>>> Stashed changes
+      spriteID: 4553f51ffd29aee44ae9de6bdd12ba3e
+      internalID: 703958498
       vertices: []
       indices: 
       edges: []
@@ -217,15 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-<<<<<<< Updated upstream
-      sexyportraits_1: -1421800205
-      sexyportraits_0: 1819735636
-      sexyportraits_2: 1231567839
-=======
-      sexyportraits_1: 1094871193
-      sexyportraits_0: 1755170778
-      sexyportraits_2: 1455536525
->>>>>>> Stashed changes
+      womens_1: -2073738083
+      womens_2: 703958498
+      womens_0: 2064785229
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
