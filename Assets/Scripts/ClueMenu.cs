@@ -14,6 +14,8 @@ public class ClueMenu : MonoBehaviour
     public GameObject change3;
     public GameObject change4;
     public GameObject change5;
+    public GameObject change6;
+    public GameObject change7;
 
     void Start()
     {
@@ -25,7 +27,10 @@ public class ClueMenu : MonoBehaviour
         change3.GetComponent<Image>().sprite = suspects.ElementAt(3);
         change4.GetComponent<Image>().sprite = suspects.ElementAt(4);
         change5.GetComponent<Image>().sprite = suspects.ElementAt(5);
+        change6.GetComponent<Image>().sprite = suspects.ElementAt(6);
+        change7.GetComponent<Image>().sprite = suspects.ElementAt(7);
     }
+
 
 
 }
