@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73be7fde9fe21084484a58d972f6ab30
+guid: 75130124768027240939bc9602b63731
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -108,10 +108,10 @@ TextureImporter:
       name: womens_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 100
-        width: 170
-        height: 220
+        x: 95
+        y: 70
+        width: 200
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59d3b609d39d59740b543b78186b68bf
-      internalID: -1218198627
+      spriteID: 9eb346e68399adf488926e4f044de149
+      internalID: 2064785229
       vertices: []
       indices: 
       edges: []
@@ -129,10 +129,10 @@ TextureImporter:
       name: womens_1
       rect:
         serializedVersion: 2
-        x: 310
-        y: 100
-        width: 170
-        height: 220
+        x: 295
+        y: 70
+        width: 200
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 745bdd3c38344e74d8375fbfd901e27c
-      internalID: 2140665516
+      spriteID: 2eb8cec0f68b88541afd1f5ede4e8e7e
+      internalID: -2073738083
       vertices: []
       indices: 
       edges: []
@@ -150,10 +150,10 @@ TextureImporter:
       name: womens_2
       rect:
         serializedVersion: 2
-        x: 520
-        y: 100
-        width: 170
-        height: 220
+        x: 495
+        y: 70
+        width: 200
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 918325375ba752a44b7221b9aac482d3
-      internalID: -1815029602
+      spriteID: 4553f51ffd29aee44ae9de6bdd12ba3e
+      internalID: 703958498
       vertices: []
       indices: 
       edges: []
@@ -178,9 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      womens_1: 2140665516
-      womens_2: -1815029602
-      womens_0: -1218198627
+      womens_1: -2073738083
+      womens_2: 703958498
+      womens_0: 2064785229
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
