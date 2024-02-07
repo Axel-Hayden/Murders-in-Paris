@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 public class NPC : Collectable
 {
 
-    protected override void OnCollide(Collider2D coll)
+    protected override void OnCollect()
     {
-        Debug.Log("Clue found");
-
+        collected = true;
+        Debug.Log("Heyyyy");
     }
+
 }
 
