@@ -24,6 +24,7 @@ public class DialogueManager : MonoBehaviour
         isActive = true;
         Debug.Log("Started conversation! Loaded messages;" + messages.Length);
         DisplayMessage();
+        backgroundBox.LeanScale(Vector3.one, .3f);
     }
 
     void DisplayMessage()
@@ -43,6 +44,7 @@ public class DialogueManager : MonoBehaviour
         }
         else {
             Debug.Log("Conversation ended");
+            backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
             isActive = false;
         }
     }
@@ -50,7 +52,7 @@ public class DialogueManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        backgroundBox.transform.localScale = Vector3.zero;
     }
 
     // Update is called once per frame

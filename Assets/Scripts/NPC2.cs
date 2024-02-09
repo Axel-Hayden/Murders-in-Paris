@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NPC2 : MonoBehaviour
+
 {
     public DialogueTrigger trigger;
     private void OnCollisionEnter2D(Collision2D collision)
