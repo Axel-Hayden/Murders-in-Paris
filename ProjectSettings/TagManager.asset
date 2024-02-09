@@ -54,3 +54,9 @@ TagManager:
   - name: Floor
     uniqueID: 1779209267
     locked: 0
+  - name: Menu
+    uniqueID: 2141922681
+    locked: 0
+  - name: MenuDrag
+    uniqueID: 2301387081
+    locked: 0
