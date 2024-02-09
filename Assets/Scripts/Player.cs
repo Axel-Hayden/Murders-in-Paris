@@ -6,6 +6,8 @@ using UnityEngine;
 public class Player : Mover
 {
 
+    public GameObject GameManager;
+
     protected override void Start()
     {
         base.Start();
@@ -17,11 +19,10 @@ public class Player : Mover
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
 
-        UpdateMotor(new Vector3(x, y, 0));
+        if (GameManager.GetComponent<GameManager>().isAnimation != true)
+            UpdateMotor(new Vector3(x, y, 0));
+
+
     }
 
-    public void SwapSprite(int skinId)
-    {
-        GetComponent<SpriteRenderer>().sprite = GameManager.instance.playerSprite[skinId];
-    }
 }

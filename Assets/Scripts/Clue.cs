@@ -9,6 +9,7 @@ public class Clue : Collectable
     public int whichClue;
     public GameObject GameManager;
 
+
     protected override void OnCollect()
     {
         if (!collected)
