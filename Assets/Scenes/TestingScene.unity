@@ -818,6 +818,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d41226767307f2489cf05d55f82d7b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  TextBox: {fileID: 0}
+  Choice01: {fileID: 0}
+  Choice02: {fileID: 0}
+  Choice03: {fileID: 0}
+  ChoiceMade: 0
 --- !u!4 &750982582
 Transform:
   m_ObjectHideFlags: 0
