@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class optionscrips : MonoBehaviour
+public class OptionScrips : MonoBehaviour
 {
     public GameObject TextBox;
     public GameObject Choice01;
@@ -13,17 +13,17 @@ public class optionscrips : MonoBehaviour
 
     public void ChoiceOption1()
     {
-        TextBox.GetComponent<Text>().text ="Gay wotermellons";
+        TextBox.GetComponent<Text>().text = "Gay wotermellons";
         ChoiceMade = 1;
     }
     public void ChoiceOption2()
     {
-        TextBox.GetComponent<Text>().text ="racist cucumber";
+        TextBox.GetComponent<Text>().text = "racist cucumber";
         ChoiceMade = 2;
     }
     public void ChoiceOption3()
     {
-        TextBox.GetComponent<Text>().text ="old hiena";
+        TextBox.GetComponent<Text>().text = "old hiena";
         ChoiceMade = 3;
     }
 

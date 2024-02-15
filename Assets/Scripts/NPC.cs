@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 public class NPC : Collectable
 {
-
     protected override void OnCollect()
     {
         collected = true;
@@ -13,4 +12,3 @@ public class NPC : Collectable
     }
 
 }
-
