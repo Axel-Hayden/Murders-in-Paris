@@ -17,7 +17,7 @@ public class Clue : Collectable
             collected = true;
             GetComponent<SpriteRenderer>().sprite = Atlas_1;
             GameManager.GetComponent<GameManager>().clueNum.Add(whichClue);
-            Debug.Log(GameManager.GetComponent<GameManager>().clueNum[0]);
+            Debug.Log(whichClue);
         }
     }
 }
