@@ -9,6 +9,7 @@ public class SuspectButton : MonoBehaviour
     public Button but;
     public GameObject Connections;
     public int num;
+    public GameObject Pins;
 
     void Start()
     {
@@ -17,7 +18,8 @@ public class SuspectButton : MonoBehaviour
 
     void TaskOnClick()
     {
-        for(int i = 0; i < 8; i++)
+        Pins.SetActive(true);
+        for (int i = 0; i < 8; i++)
         {
             if (i != num)
             {

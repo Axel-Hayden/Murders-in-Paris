@@ -9,6 +9,7 @@ public class BackClose : MonoBehaviour
     public Button but;
     public GameObject GameManager;
     public GameObject Connections;
+    public GameObject Pins;
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class BackClose : MonoBehaviour
     void TaskOnClick()
     {
         GameManager.GetComponent<GameManager>().isAnimation = false;
+        Pins.SetActive(false);
 
         for (int i = 0; i < 8; i++)
         {
