@@ -24,6 +24,7 @@ public class BackClose : MonoBehaviour
         for (int i = 0; i < 8; i++)
         {
             Connections.transform.GetChild(i).gameObject.SetActive(false);
+
         }
     }
 }
