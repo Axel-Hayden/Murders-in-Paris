@@ -8,13 +8,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Jack's Scene.unity
+    path: Assets/Scenes/Mainscene.unity
+    guid: fd55b3dcd4f3a21479ee6ada8e7b9144
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/OutsideScene.unity
+    guid: 50d8f16053290c946b5ca4cce9d67d94
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/Jack's Scene.unity
     guid: b741a1a63f58b4f44b6ef784e980006d
   - enabled: 1
-    path: Assets/Scenes/OwenScene.Unity
-    guid: 43bdba45911f3274888efe9da143f7fb
+    path: Assets/Scenes/Level One Scenes/LoseScene.unity
+    guid: 601819ece4ccd2f40b3dd85be309b7a0
   - enabled: 1
-    path: Assets/Scenes/Axel's Scene.unity
-    guid: 5cb056ccf2ba3284784a34451e4c5d61
+    path: Assets/Scenes/Level One Scenes/WinScene.unity
+    guid: 00fe228f203e46641ad5dc8750cc94e4
   m_configObjects: {}

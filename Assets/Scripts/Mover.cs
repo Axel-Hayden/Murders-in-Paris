@@ -35,12 +35,9 @@ public abstract class Mover : MonoBehaviour
             {
                 //movement
                 transform.Translate(0, moveDelta.y * Time.deltaTime, 0);
-
-
             }
-
             hit = Physics2D.BoxCast(transform.position, boxCollider.size, 0, new Vector2(moveDelta.x, 0), Mathf.Abs(moveDelta.x * Time.deltaTime), LayerMask.GetMask("Blocking", "Collidable"));
-            if (hit.collider == null)
+            if (hit.collider == null && moveDelta.y == 0)
             {
                 //movement
                 transform.Translate(moveDelta.x * Time.deltaTime, 0, 0);

@@ -371,7 +371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 0
-    message: im not ken
+    message: whats good schawtie
   - actorId: 0
     message: you pressed 1
   - actorId: 0
@@ -474,7 +474,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &412969279
 Rigidbody2D:
@@ -789,55 +789,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c5de20104bd95d4cbeb8493fa55b765, type: 3}
---- !u!1 &750982580
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 750982582}
-  - component: {fileID: 750982581}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &750982581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750982580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d41226767307f2489cf05d55f82d7b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TextBox: {fileID: 0}
-  Choice01: {fileID: 0}
-  Choice02: {fileID: 0}
-  Choice03: {fileID: 0}
-  ChoiceMade: 0
---- !u!4 &750982582
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 750982580}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 552.5, y: 68.100006, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &993802354 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5846732346416878068, guid: 38c6b1681e729a044bf6f5527b18704a, type: 3}
@@ -1515,13 +1466,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   messages:
   - actorId: 0
-    message: where the hoes at
+    message: suffering from insanity
   - actorId: 0
-    message: not here
+    message: nah im enjoying it
   - actorId: 1
-    message: look out
+    message: pysch ward
   - actorId: 1
-    message: here comes autism
+    message: more like hype ward
   actors:
   - name: whaloter
     sprite: {fileID: 2064785229, guid: 75130124768027240939bc9602b63731, type: 3}

@@ -8,7 +8,7 @@ using System.Linq;
 public class ItemSlot : MonoBehaviour, IDropHandler
 {
 
-    public void OnDrop(PointerEventData eventData)
+    public virtual void OnDrop(PointerEventData eventData)
     {
         Debug.Log("Good Spot");
         if (eventData.pointerDrag != null)
