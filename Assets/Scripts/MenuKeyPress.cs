@@ -6,7 +6,7 @@ using TMPro;
 
 public class MenuKeyPress : MonoBehaviour
 {
-    public GameObject GameManager, Menu, Pins, Connections;
+    public GameObject GameManager, Menu, Pins, Connections, ClueInsp;
 
 
     void Update()
@@ -20,6 +20,7 @@ public class MenuKeyPress : MonoBehaviour
             {
                 Connections.transform.GetChild(i).gameObject.SetActive(false);
             }
+            ClueInsp.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && Menu.activeInHierarchy == false)
         {

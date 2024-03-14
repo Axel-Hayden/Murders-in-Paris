@@ -2,11 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueTrigger : MonoBehaviour
 {
     public Message[] messages;
     public Actor[] actors;
+    private Scene scene;
+
+    void Start()
+    {
+        scene = SceneManager.GetActiveScene();
+    }
 
     public void StartDialogue(){
         FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
