@@ -26,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level One Scenes/WinScene.unity
     guid: 00fe228f203e46641ad5dc8750cc94e4
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/CentralGameRoom.unity
+    guid: adb5ed51a26df49f2b050b0e7586ae61
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/IntroScene.unity
+    guid: 6988938c6d7bfa348a6a9c8dde000398
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/LeftGameRoom.unity
+    guid: 195d656f5a946476ab4be3706a85cc3c
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/TopGameRoom.unity
+    guid: e487077bb38a34c3a8a954107e39005d
   m_configObjects: {}

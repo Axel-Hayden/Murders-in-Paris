@@ -8,6 +8,7 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Message[] messages;
     public Actor[] actors;
+    public int clue;
     private Scene scene;
 
     void Start()
@@ -16,7 +17,7 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     public void StartDialogue(){
-        FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
+        FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors, clue);
     }
 }
 

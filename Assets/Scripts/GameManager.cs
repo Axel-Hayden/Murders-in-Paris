@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,12 +22,31 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += LoadState;
     }
 
+    /*private void Update()
+    {
+        if(clueNum.Count != 0 && ClueNumStatic.Count != 0){
+            if(clueNum.Count > ClueNumStatic.Count)
+            {
+                ClueNumStatic.Clear();
+                for(int i = 0; i < clueNum.Count; i++)
+                    ClueNumStatic.Add(clueNum[i]);
+            }
+            else if(ClueNumStatic.Count > clueNum.Count)
+            {
+                clueNum.Clear();
+                for(int i = 0; i < ClueNumStatic.Count; i++)
+                    clueNum.Add(ClueNumStatic[i]);
+            }
+        }
+    }*/
+
     //Animation Control Lock
     public bool isAnimation;
 
     //Clues Collected
-    public List<int> clueNum;
+    public static readonly List<int> clueNum = new List<int>();
 
+    //private static List<int> ClueNumStatic;
 
     //Resources
     public List<Sprite> playerSprite;

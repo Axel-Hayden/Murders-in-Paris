@@ -7,7 +7,7 @@ public class Clue : Collectable
     public Sprite Clues;
     public Sprite Atlas_1;
     public int whichClue;
-    public GameObject GameManager;
+    //public GameObject GameManager;
 
 
     protected override void OnCollect()
@@ -16,7 +16,7 @@ public class Clue : Collectable
         {
             collected = true;
             GetComponent<SpriteRenderer>().sprite = Atlas_1;
-            GameManager.GetComponent<GameManager>().clueNum.Add(whichClue);
+            GameManager.clueNum.Add(whichClue);
             Debug.Log(whichClue);
         }
     }

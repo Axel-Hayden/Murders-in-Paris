@@ -11,16 +11,17 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI actorName;
     public TextMeshProUGUI messageText;
     public RectTransform backgroundBox;
-    public GameObject GameManager;
+    public GameObject GameManagers;
     public Animator animator;
     Vector2 movement;
+    public int whichClue;
 
     Message[] currentMessages;
     Actor[] currentActors;
     int activeMessage =0;
     public static bool isActive = false;
 
-    public void OpenDialogue(Message[] messages, Actor[] actors){
+    public void OpenDialogue(Message[] messages, Actor[] actors,int c){
         currentMessages = messages;
         currentActors = actors;
         activeMessage = 0;
@@ -28,6 +29,7 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("Started conversation! Loaded messages;" + messages.Length);
         DisplayMessage();
         backgroundBox.LeanScale(Vector3.one, .3f);
+        whichClue = c;
     }
 
     void DisplayMessage()
@@ -51,8 +53,9 @@ public class DialogueManager : MonoBehaviour
             backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
             activeMessage = 0;
             isActive = false;
-            GameManager.GetComponent<GameManager>().isAnimation = false;
-
+            GameManagers.GetComponent<GameManager>().isAnimation = false;
+            if(whichClue != 0)
+                GameManager.clueNum.Add(whichClue);
         }
     }
 
@@ -68,7 +71,7 @@ public class DialogueManager : MonoBehaviour
 
         if (isActive == true)
         {
-            GameManager.GetComponent<GameManager>().isAnimation = true;
+            GameManagers.GetComponent<GameManager>().isAnimation = true;
             animator.SetFloat("Speed", movement.sqrMagnitude);
         }
 
