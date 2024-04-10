@@ -8,16 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/IntroScene.unity
+    guid: 6988938c6d7bfa348a6a9c8dde000398
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Mainscene.unity
     guid: fd55b3dcd4f3a21479ee6ada8e7b9144
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level One Scenes/OutsideScene.unity
     guid: 50d8f16053290c946b5ca4cce9d67d94
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level One Scenes/Jack's Scene.unity
     guid: b741a1a63f58b4f44b6ef784e980006d
   - enabled: 1
