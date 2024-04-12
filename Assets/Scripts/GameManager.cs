@@ -17,9 +17,17 @@ public class GameManager : MonoBehaviour
             Destroy(floatingTextManager.gameObject);
             return;
         }
- 
         instance = this;
         SceneManager.sceneLoaded += LoadState;
+        //level based teleporting
+        if(LevelCheck.PreviousLevel == "IntroScene")
+            player.transform.position = new Vector3((float) -3.46,(float) 2,0);
+        else if(LevelCheck.PreviousLevel == "TopGameRoom")
+            player.transform.position = new Vector3((float) -3.46,(float) 8.5,0);
+        else if(LevelCheck.PreviousLevel == "LeftGameRoom")
+            player.transform.position = new Vector3((float) -14,(float) 4.6,0);
+        else if(LevelCheck.PreviousLevel == "RightGameRoom")
+            player.transform.position = new Vector3((float) 7,(float) 4.6,0);
     }
 
     /*private void Update()

@@ -12,7 +12,6 @@ public class LevelCheck : MonoBehaviour
     
     private void Start()
     {
-        Debug.Log(LevelCheck.PreviousLevel);  // use this in any level to get the last level.
 
     }
 }
