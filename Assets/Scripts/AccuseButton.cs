@@ -8,10 +8,10 @@ public class AccuseButton : MonoBehaviour
 {
 
     public Button but;
-    public GameObject GameManager, Connections;
+    public GameObject Connections;
     private GameObject game, game1;
     public string loseScene, winScene;
-    private int count = 0;
+    private int count = 0,count2 = 0;
     public int sus;
 
 
@@ -33,8 +33,14 @@ public class AccuseButton : MonoBehaviour
                     if(game.transform.GetChild(y).childCount > 0) //checks to see if the children of suspect page have children
                     {
                         count++;
-                        if(count > 2 && i == sus)
-                            UnityEngine.SceneManagement.SceneManager.LoadScene(winScene);
+                        if(count > 1 && i == sus)
+                        {
+                            for(int x = 1; x <= GameManager.clueNum.Count; x++)
+                                if(GameManager.clueNum.Contains(x) && GameManager.correctClues.Contains(x))
+                                    count2++;
+                                    if(count2 > 1)
+                                        UnityEngine.SceneManagement.SceneManager.LoadScene(winScene);
+                        }
                         else
                             UnityEngine.SceneManagement.SceneManager.LoadScene(loseScene);
                     }

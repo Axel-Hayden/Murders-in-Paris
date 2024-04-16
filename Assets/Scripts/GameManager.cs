@@ -54,6 +54,9 @@ public class GameManager : MonoBehaviour
     //Clues Collected
     public static readonly List<int> clueNum = new List<int>();
 
+    //The Clues Which Point To The Correct Suspect
+    public static readonly List<int> correctClues = new List<int>(){1,2,3};
+
     //private static List<int> ClueNumStatic;
 
     //Resources
