@@ -30,6 +30,11 @@ public class GameManager : MonoBehaviour
             player.transform.position = new Vector3((float) 7,(float) 4.6,0);
     }
 
+    private void FixedUpdate()
+    {
+        movex = Input.GetAxisRaw("Horizontal");
+        movey = Input.GetAxisRaw("Vertical");
+    }
     /*private void Update()
     {
         if(clueNum.Count != 0 && ClueNumStatic.Count != 0){
@@ -59,6 +64,7 @@ public class GameManager : MonoBehaviour
 
     //private static List<int> ClueNumStatic;
 
+    public static float movex,movey;
     //Resources
     public List<Sprite> playerSprite;
 
@@ -68,7 +74,7 @@ public class GameManager : MonoBehaviour
     public Player player;
     public FloatingTextManager floatingTextManager;
 
-
+    public Animator animator;
     //Logic
     public int dollars;
 
