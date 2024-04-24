@@ -15,7 +15,6 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
     Vector2 movement;
     public int whichClue;
-
     Message[] currentMessages;
     Actor[] currentActors;
     int activeMessage =0;
