@@ -14,7 +14,7 @@ public class IntroNPCDialogue : MonoBehaviour
     public GameObject GameManagers;
     public Animator animator;
     Vector2 movement;
-    private int whichClue, dialogueSplit, splitStart;
+    private int whichClue, dialogueSplit, splitStart, cLock, cLock1;
     Message[] currentMessages;
     Actor[] currentActors;
     int activeMessage = 0;
@@ -86,12 +86,18 @@ public class IntroNPCDialogue : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    public void intChange(int clue, int dSplit, int sSplit)
+    public void intChange(int clue, int dSplit, int sSplit, int locked, int locked1)
     {
-        backgroundBox.transform.localScale = Vector3.zero;
         whichClue = clue;
         dialogueSplit = dSplit;
         splitStart = sSplit;
+        cLock = locked;
+        cLock1 = locked1;
+    }
+
+    void Start()
+    {
+        backgroundBox.transform.localScale = Vector3.zero;
     }
 
     public void collect(bool col)
@@ -103,8 +109,8 @@ public class IntroNPCDialogue : MonoBehaviour
     {
         if (isActive == true)
         {
-            animator.SetFloat("Speed", movement.sqrMagnitude);
-            if(Input.GetKeyDown(KeyCode.Space) && activeMessage > dialogueSplit)
+            animator.SetFloat("Speed", movement.sqrMagnitude); //stop player sprite from moving
+            if(Input.GetKeyDown(KeyCode.Space) && activeMessage > dialogueSplit && (activeMessage != 13 || activeMessage != 14 || activeMessage != 15)) //ends dialogue if you are on page beyond the dialouge split and hit space
             {
                 Debug.Log("Conversation ended");
                 backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
@@ -115,12 +121,32 @@ public class IntroNPCDialogue : MonoBehaviour
                     GameManager.clueNum.Add(whichClue);
                 collected = true;
             }
-            else if (Input.GetKeyDown(KeyCode.Space) && activeMessage != dialogueSplit)
+            else if (Input.GetKeyDown(KeyCode.Space) && activeMessage == dialogueSplit - 1)
+            {
+                if(GameManager.clueNum.Contains(cLock) && GameManager.clueNum.Contains(cLock1))
+                {
+                    NextMessage(13);
+                }
+                else if (GameManager.clueNum.Contains(cLock1))
+                {
+                    NextMessage(14);
+                }
+                else if (GameManager.clueNum.Contains(cLock))
+                {
+                    NextMessage(15);
+                }
+                else if (Input.GetKeyDown(KeyCode.Space) && (activeMessage != dialogueSplit || activeMessage != 13 || activeMessage != 14 || activeMessage != 15))
+                {
+                    NextMessage(0);
+                    Debug.Log("Next");
+                } 
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && activeMessage != dialogueSplit && activeMessage != 13 && activeMessage != 14 && activeMessage != 15)
             {
                 NextMessage(0);
                 Debug.Log("Next");
             }
-            else if (activeMessage == dialogueSplit)
+            else if (activeMessage == dialogueSplit || activeMessage == 13 || activeMessage == 14 || activeMessage == 15) //when at the dialogue split allows for different questioning options
             {
                 if (Input.GetKeyDown(KeyCode.Alpha1))
                 {
@@ -136,6 +162,16 @@ public class IntroNPCDialogue : MonoBehaviour
                 {
                     NextMessage(dialogueSplit + 3);
                     Debug.Log("3 pressed");
+                }
+                else if (Input.GetKeyDown(KeyCode.Alpha4) && GameManager.clueNum.Contains(cLock)) //checks collected clues to see if player has context to ask this question
+                {
+                    NextMessage(dialogueSplit + 4);
+                    Debug.Log("4 pressed");
+                }
+                else if (Input.GetKeyDown(KeyCode.Alpha5) && GameManager.clueNum.Contains(cLock1)) //checks collected clues to see if player has context to ask this question
+                {
+                    NextMessage(dialogueSplit + 5);
+                    Debug.Log("5 pressed");
                 }
 
             }
