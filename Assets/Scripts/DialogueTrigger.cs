@@ -7,16 +7,20 @@ using UnityEngine.SceneManagement;
 public class DialogueTrigger : MonoBehaviour
 {
     public Message[] messages;
+    public int dialogueSplit, splitStart, clue, lock1, lock2;
     public Actor[] actors;
     private Scene scene;
+    public bool collected = false;
 
     void Start()
     {
         scene = SceneManager.GetActiveScene();
     }
 
-    public void StartDialogue(){
-        FindObjectOfType<DialogueManager>().OpenDialogue(messages, actors);
+    public void StartDialogue()
+    {
+        FindObjectOfType<IntroNPCDialogue>().intChange(clue, dialogueSplit, splitStart, lock1, lock2);
+        FindObjectOfType<IntroNPCDialogue>().OpenDialogue(messages, actors);
     }
 }
 
