@@ -9,7 +9,7 @@ public class MenuClues : MonoBehaviour
 {
     public Sprite Clues, Context;
     public int whichClue;
-    public GameObject GameManager;
+    //public GameObject GameManager;
     public string content, tips;
     public Button but;
     public GameObject leftPage;
@@ -23,7 +23,7 @@ public class MenuClues : MonoBehaviour
     void TaskOnClick()
     {
         GameObject rightChild = rightPage.transform.GetChild(0).gameObject;
-        if (GameManager.GetComponent<GameManager>().clueNum.Contains(whichClue))
+        if (GameManager.clueNum.Contains(whichClue))
         {
             rightChild.SetActive(true);
             leftPage.GetComponent<TMPro.TextMeshProUGUI>().text = content;
