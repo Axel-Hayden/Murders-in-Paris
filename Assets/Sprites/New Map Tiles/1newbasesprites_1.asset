@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: door_sprite_3
+  m_Name: 1newbasesprites_1
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -1621908122, guid: dcf1ce7b6fe557340a4f243e942d4b53, type: 3}
+  m_Sprite: {fileID: -1704813626, guid: 2a0745897f2f7054085883b93d94d40f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
