@@ -61,7 +61,7 @@ public class IntroNPCDialogue : MonoBehaviour
                 Debug.Log("Conversation ended");
                 backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
                 Debug.Log(activeMessage);
-                if(whichClue != 0 && activeMessage == diaClue)
+                if(whichClue != 0 && (activeMessage == diaClue || diaClue == 13))
                     GameManager.clueNum.Add(whichClue);
                 activeMessage = 0;
                 GameManagers.GetComponent<GameManager>().isAnimation = false;
@@ -80,7 +80,7 @@ public class IntroNPCDialogue : MonoBehaviour
                 Debug.Log("Conversation ended");
                 backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
                 Debug.Log(activeMessage);
-                if(whichClue != 0 && activeMessage == diaClue)
+                if(whichClue != 0 && (activeMessage == diaClue || diaClue == 13))
                     GameManager.clueNum.Add(whichClue);
                 activeMessage = 0;
                 GameManagers.GetComponent<GameManager>().isAnimation = false;
@@ -121,7 +121,7 @@ public class IntroNPCDialogue : MonoBehaviour
                 Debug.Log("Conversation ended");
                 backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
                 Debug.Log(activeMessage);
-                if(whichClue != 0 && activeMessage == diaClue)
+                if(whichClue != 0 && (activeMessage == diaClue || diaClue == 13))
                     GameManager.clueNum.Add(whichClue);
                 activeMessage = 0;
                 GameManagers.GetComponent<GameManager>().isAnimation = false;
