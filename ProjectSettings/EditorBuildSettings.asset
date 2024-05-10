@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House.unity
     guid: 97d4b4c25ce3d44cd8b118d1102574d7
+  - enabled: 1
+    path: Assets/Scenes/@.unity
+    guid: 348f0b9dc72724718900e0cbe2180fb9
+  - enabled: 1
+    path: Assets/Scenes/House3.unity
+    guid: 76f5f3ef48e194481989cbb5b8f9e770
   m_configObjects: {}
