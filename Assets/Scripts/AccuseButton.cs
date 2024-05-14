@@ -33,7 +33,7 @@ public class AccuseButton : MonoBehaviour
                     if(game.transform.GetChild(y).childCount > 0) //checks to see if the children of suspect page have children
                     {
                         count++;
-                        if(count > 1 && i == sus)
+                        if(count > 1)
                         {
                             winOrLose();
                         }
@@ -54,9 +54,9 @@ public class AccuseButton : MonoBehaviour
                 }
             }
             if(count2 > 4)//if player has collected at least 3 associated clues then they win
-                { 
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(winScene);
-                }
+            { 
+                UnityEngine.SceneManagement.SceneManager.LoadScene(winScene);
+            }
             else
                 UnityEngine.SceneManagement.SceneManager.LoadScene(loseScene);
         }
