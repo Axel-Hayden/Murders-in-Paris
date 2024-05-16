@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: af4b228cce29541d195aa921da011c12
+guid: c7e00b4dd6af941648276a19f10c1976
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,54 +105,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Furneture2 1_0
+      name: piss tiles_0
       rect:
         serializedVersion: 2
         x: 2
         y: 134
         width: 128
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c17b97eb2af0481c84276de2d80147c
-      internalID: 1380021117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Furneture2 1_1
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 134
-        width: 90
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 829bafbe1d501431cbecf7eb39374e6c
-      internalID: 1102052342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Furneture2 1_2
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 2
-        width: 44
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ccc815df699744ba8934e1a82374a6a
-      internalID: -252106763
+      spriteID: 73b1f76066d9d4c2089aec97b66a0be5
+      internalID: -608047522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Furneture2 1_3
+      name: piss tiles_1
       rect:
         serializedVersion: 2
         x: 134
-        y: 2
+        y: 134
         width: 128
-        height: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +140,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2d3a4fe8872741c1bd8070a60b6ef99
-      internalID: -1114055488
+      spriteID: a412894b85d1c4f0eb9e3e9664c29254
+      internalID: -659802054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: piss tiles_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2eb0a4529d34d8083f410dc9bc0e70
+      internalID: 1795261546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: piss tiles_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4dac47b6ada4d1b947e3dab4636096
+      internalID: 46514598
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Furneture2 1_1: 1102052342
-      Furneture2 1_0: 1380021117
-      Furneture2 1_3: -1114055488
-      Furneture2 1_2: -252106763
+      piss tiles_1: -659802054
+      piss tiles_3: 46514598
+      piss tiles_0: -608047522
+      piss tiles_2: 1795261546
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

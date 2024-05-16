@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: af4b228cce29541d195aa921da011c12
+guid: c6f9c8a9d100649c69d8871e8a1f0ebe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,54 +105,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Furneture2 1_0
+      name: bed (1)_0
       rect:
         serializedVersion: 2
         x: 2
         y: 134
         width: 128
-        height: 90
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c17b97eb2af0481c84276de2d80147c
-      internalID: 1380021117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Furneture2 1_1
-      rect:
-        serializedVersion: 2
-        x: 154
-        y: 134
-        width: 90
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 829bafbe1d501431cbecf7eb39374e6c
-      internalID: 1102052342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Furneture2 1_2
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 2
-        width: 44
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -161,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ccc815df699744ba8934e1a82374a6a
-      internalID: -252106763
+      spriteID: 76ac11f0829b54d2f835a478b59ed160
+      internalID: -1659712701
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Furneture2 1_3
+      name: bed (1)_1
       rect:
         serializedVersion: 2
         x: 134
-        y: 2
+        y: 134
         width: 128
-        height: 64
+        height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +140,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2d3a4fe8872741c1bd8070a60b6ef99
-      internalID: -1114055488
+      spriteID: 66de25204253a4189b2deace236a6f59
+      internalID: 1693625421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed (1)_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18bbca8d5b2144fc9dc57b1e1b4e725
+      internalID: -373626183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bed (1)_3
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 2
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b058c7f37d2f457aa4f7fd78bcca749
+      internalID: -453655780
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Furneture2 1_1: 1102052342
-      Furneture2 1_0: 1380021117
-      Furneture2 1_3: -1114055488
-      Furneture2 1_2: -252106763
+      bed (1)_2: -373626183
+      bed (1)_1: 1693625421
+      bed (1)_0: -1659712701
+      bed (1)_3: -453655780
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
