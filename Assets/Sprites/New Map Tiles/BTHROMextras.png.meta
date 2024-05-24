@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 296ab61dc9f8b491a9bac48ecdd74b3b
+=======
+guid: d6cc0be3a6dd14606a215d967d03290f
+>>>>>>> 73812d6ece401caf43ee5f3d2469a83ca11dc35d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,8 +123,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 773e60b2a564e4da9a18eda25c219269
       internalID: -1272394271
+=======
+      spriteID: 5c0b0867b6cf1495eb87d01643f38dcc
+      internalID: 1476367000
+>>>>>>> 73812d6ece401caf43ee5f3d2469a83ca11dc35d
       vertices: []
       indices: 
       edges: []
@@ -140,8 +149,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: b2cb6e0861e3944a98152d6ddc351613
       internalID: 918743473
+=======
+      spriteID: ac46ec328a8a247799aaf3dc3bc854f6
+      internalID: 1002923788
+>>>>>>> 73812d6ece401caf43ee5f3d2469a83ca11dc35d
       vertices: []
       indices: 
       edges: []
@@ -161,8 +175,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: c880f3a8b53ca4b7eb57dc89e41f7e6c
       internalID: 1722296751
+=======
+      spriteID: bb89f70aab32a41eb818a2153b841770
+      internalID: -1789621583
+>>>>>>> 73812d6ece401caf43ee5f3d2469a83ca11dc35d
       vertices: []
       indices: 
       edges: []
@@ -182,8 +201,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
+<<<<<<< HEAD
       spriteID: 60eb155807fe94a50b7ebaa90483919f
       internalID: -1308869666
+=======
+      spriteID: 0dee227c8523641698af096e473b5cbc
+      internalID: -1979301671
+>>>>>>> 73812d6ece401caf43ee5f3d2469a83ca11dc35d
       vertices: []
       indices: 
       edges: []
@@ -199,10 +223,17 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+<<<<<<< HEAD
       BTHROMextras_2: 1722296751
       BTHROMextras_3: -1308869666
       BTHROMextras_0: -1272394271
       BTHROMextras_1: 918743473
+=======
+      BTHROMextras_2: -1789621583
+      BTHROMextras_3: -1979301671
+      BTHROMextras_0: 1476367000
+      BTHROMextras_1: 1002923788
+>>>>>>> 73812d6ece401caf43ee5f3d2469a83ca11dc35d
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
