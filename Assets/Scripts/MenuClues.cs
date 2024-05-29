@@ -28,6 +28,7 @@ public class MenuClues : MonoBehaviour
             rightChild.SetActive(true);
             leftPage.GetComponent<TMPro.TextMeshProUGUI>().text = content;
             rightChild.GetComponent<Image>().sprite = Context; 
+            rightChild.GetComponent<Image>().SetNativeSize();
             rightPage.GetComponent<TMPro.TextMeshProUGUI>().text = tips;
         }
         else

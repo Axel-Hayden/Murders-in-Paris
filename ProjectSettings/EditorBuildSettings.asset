@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Level1Outside.Unity
+    guid: 6f2208d46287c0f4696cf7e06cf4cb6d
+  - enabled: 1
     path: Assets/Scenes/Level One Scenes/IntroScene.unity
     guid: 6988938c6d7bfa348a6a9c8dde000398
   - enabled: 0
@@ -17,11 +20,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Mainscene.unity
     guid: fd55b3dcd4f3a21479ee6ada8e7b9144
+<<<<<<< HEAD
+  - enabled: 1
+    path: Assets/Scenes/OutsideScene.unity
+    guid: 50d8f16053290c946b5ca4cce9d67d94
+  - enabled: 1
+=======
   - enabled: 0
-    path: Assets/Scenes/Level One Scenes/OutsideScene.unity
+    path: 
     guid: 50d8f16053290c946b5ca4cce9d67d94
   - enabled: 0
-    path: Assets/Scenes/Level One Scenes/Jack's Scene.unity
+>>>>>>> 73812d6ece401caf43ee5f3d2469a83ca11dc35d
+    path: Assets/Scenes/Jack's Scene.unity
     guid: b741a1a63f58b4f44b6ef784e980006d
   - enabled: 1
     path: Assets/Scenes/Level One Scenes/LoseScene.unity
@@ -30,18 +40,36 @@ EditorBuildSettings:
     path: Assets/Scenes/Level One Scenes/WinScene.unity
     guid: 00fe228f203e46641ad5dc8750cc94e4
   - enabled: 1
-    path: Assets/Scenes/Level One Scenes/CentralGameRoom.unity
+    path: Assets/Scenes/CentralGameRoom.unity
     guid: adb5ed51a26df49f2b050b0e7586ae61
   - enabled: 1
     path: Assets/Scenes/Level One Scenes/IntroScene.unity
     guid: 6988938c6d7bfa348a6a9c8dde000398
   - enabled: 1
-    path: Assets/Scenes/Level One Scenes/LeftGameRoom.unity
+    path: Assets/Scenes/LeftGameRoom.unity
     guid: 195d656f5a946476ab4be3706a85cc3c
   - enabled: 1
-    path: Assets/Scenes/Level One Scenes/TopGameRoom.unity
+    path: Assets/Scenes/TopGameRoom.unity
     guid: e487077bb38a34c3a8a954107e39005d
   - enabled: 1
-    path: Assets/Scenes/Level One Scenes/RightGameRoom.unity
+    path: Assets/Scenes/RightGameRoom.unity
     guid: 99cf9c4f29da643e09037fb54153214d
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/Living room.unity
+    guid: 97d4b4c25ce3d44cd8b118d1102574d7
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/House2.unity
+    guid: 348f0b9dc72724718900e0cbe2180fb9
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/House3.unity
+    guid: 76f5f3ef48e194481989cbb5b8f9e770
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/Bedroom.unity
+    guid: 227eae41f4f124d258a42a9a08730e28
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/Bathroom.unity
+    guid: 7ea2d73d548ee4f5899d456f0f3d5735
+  - enabled: 1
+    path: Assets/Scenes/Level One Scenes/Bathroom2.unity
+    guid: 07c947f8cf2a14f6ea9f8196e3aa045d
   m_configObjects: {}

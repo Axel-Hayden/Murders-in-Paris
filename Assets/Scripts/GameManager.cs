@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     public static readonly List<int> clueNum = new List<int>();
 
     //The Clues Which Point To The Correct Suspect
-    public static readonly List<int> correctClues = new List<int>(){1,2,3};
+    public static readonly List<int> correctClues = new List<int>(){1,5,8};
 
     //private static List<int> ClueNumStatic;
 

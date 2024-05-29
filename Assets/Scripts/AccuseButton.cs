@@ -12,7 +12,7 @@ public class AccuseButton : MonoBehaviour
     private GameObject game, game1;
     public string loseScene, winScene;
     private int count = 0,count2 = 0;
-    public int sus;
+    public int sus, pageSus;
 
 
     void Start()
@@ -28,12 +28,13 @@ public class AccuseButton : MonoBehaviour
             game = Connections.transform.GetChild(i).gameObject; //get the children of connect and saves them to a variable
             if (Connections.transform.GetChild(i).gameObject.activeInHierarchy == true) //checks if suspect page is active
             {
+                pageSus = i;
                 for(int y = 1; y < game.transform.childCount; y++) //looks at all but the first child
                 {
                     if(game.transform.GetChild(y).childCount > 0) //checks to see if the children of suspect page have children
                     {
                         count++;
-                        if(count > 1 && i == sus)
+                        if(count > 1)
                         {
                             winOrLose();
                         }
@@ -45,18 +46,19 @@ public class AccuseButton : MonoBehaviour
 
         void winOrLose()
         {
-            for(int x = 1; x <= GameManager.clueNum.Count; x++)//checks for clues starting at 1; no zeroth clue
+            for(int x = 1; x <= 12; x++)//checks for clues starting at 1; no zeroth clue
             { 
                 if(GameManager.clueNum.Contains(x) && GameManager.correctClues.Contains(x)) //checks to see if the player has the correct clues for the suspect
                 { 
                     count2++;
-                    Debug.Log("count 2 =" + count2);
+                    Debug.Log("count 2 = " + count2);
+                    Debug.Log(x + " clue");
                 }
             }
-            if(count2 > 4)//if player has collected at least 3 associated clues then they win
-                { 
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(winScene);
-                }
+            if(count2 >= 6 && pageSus == sus)//if player has collected at least 3 associated clues then they win
+            { 
+                UnityEngine.SceneManagement.SceneManager.LoadScene(winScene);
+            }
             else
                 UnityEngine.SceneManagement.SceneManager.LoadScene(loseScene);
         }

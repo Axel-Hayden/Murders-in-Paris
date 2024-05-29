@@ -14,12 +14,13 @@ public class IntroNPCDialogue : MonoBehaviour
     public GameObject GameManagers;
     public Animator animator;
     Vector2 movement;
-    private int whichClue, dialogueSplit, splitStart, cLock, cLock1;
+    private int whichClue, dialogueSplit, splitStart, cLock, cLock1, diaClue;
     Message[] currentMessages;
     Actor[] currentActors;
     int activeMessage = 0;
     public static bool isActive = false;
     private bool collected = false;
+
 
     public void OpenDialogue(Message[] messages, Actor[] actors)
     {
@@ -59,11 +60,12 @@ public class IntroNPCDialogue : MonoBehaviour
             {
                 Debug.Log("Conversation ended");
                 backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
+                Debug.Log(activeMessage);
+                if(whichClue != 0 && (activeMessage == diaClue || diaClue == 13))
+                    GameManager.clueNum.Add(whichClue);
                 activeMessage = 0;
                 GameManagers.GetComponent<GameManager>().isAnimation = false;
                 isActive = false;
-                if(whichClue != 0)
-                    GameManager.clueNum.Add(whichClue);
             }
         }
         else
@@ -77,6 +79,9 @@ public class IntroNPCDialogue : MonoBehaviour
             {
                 Debug.Log("Conversation ended");
                 backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
+                Debug.Log(activeMessage);
+                if(whichClue != 0 && (activeMessage == diaClue || diaClue == 13))
+                    GameManager.clueNum.Add(whichClue);
                 activeMessage = 0;
                 GameManagers.GetComponent<GameManager>().isAnimation = false;
                 isActive = false;
@@ -86,13 +91,14 @@ public class IntroNPCDialogue : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    public void intChange(int clue, int dSplit, int sSplit, int locked, int locked1)
+    public void intChange(int clue, int dSplit, int sSplit, int locked, int locked1, int dClues)
     {
         whichClue = clue;
         dialogueSplit = dSplit;
         splitStart = sSplit;
         cLock = locked;
         cLock1 = locked1;
+        diaClue = dClues;
     }
 
     void Start()
@@ -110,15 +116,16 @@ public class IntroNPCDialogue : MonoBehaviour
         if (isActive == true)
         {
             animator.SetFloat("Speed", movement.sqrMagnitude); //stop player sprite from moving
-            if(Input.GetKeyDown(KeyCode.Space) && activeMessage > dialogueSplit && (activeMessage != 13 || activeMessage != 14 || activeMessage != 15)) //ends dialogue if you are on page beyond the dialouge split and hit space
+            if(Input.GetKeyDown(KeyCode.Space) && (activeMessage > dialogueSplit) && (activeMessage != 13 && activeMessage != 14 && activeMessage != 15)) //ends dialogue if you are on page beyond the dialouge split and hit space
             {
                 Debug.Log("Conversation ended");
                 backgroundBox.LeanScale(Vector3.zero, .3f).setEaseInOutExpo();
+                Debug.Log(activeMessage);
+                if(whichClue != 0 && (activeMessage == diaClue || diaClue == 13))
+                    GameManager.clueNum.Add(whichClue);
                 activeMessage = 0;
                 GameManagers.GetComponent<GameManager>().isAnimation = false;
                 isActive = false;
-                if(whichClue != 0)
-                    GameManager.clueNum.Add(whichClue);
                 collected = true;
             }
             else if (Input.GetKeyDown(KeyCode.Space) && activeMessage == dialogueSplit - 1)
